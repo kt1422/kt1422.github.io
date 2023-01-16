@@ -2,48 +2,40 @@
 Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
 Chart.defaults.global.defaultFontColor = '#292b2c';
 
-// Area Chart Example
-var ctx = document.getElementById("myAreaChart");
+// Bar Chart Example
+var ctx = document.getElementById("myBarChart");
 var myLineChart = new Chart(ctx, {
-  type: 'line',
+  type: 'bar',
   data: {
-    labels: ["Jan 13", "Jan 14", "Jan 15", "Jan 16", "Jan 17", "Jan 18", "Jan 19", "Jan 20", "Jan 21", "Jan 22", "Jan 23", "Jan 24", "Jan 25"],
+    labels: ["August", "September", "October", "November", "December", "January"],
     datasets: [{
       label: "Students",
-      lineTension: 0.3,
-      backgroundColor: "rgba(2,117,216,0.2)",
+      backgroundColor: "rgba(2,117,216,1)",
       borderColor: "rgba(2,117,216,1)",
-      pointRadius: 5,
-      pointBackgroundColor: "rgba(2,117,216,1)",
-      pointBorderColor: "rgba(255,255,255,0.8)",
-      pointHoverRadius: 5,
-      pointHoverBackgroundColor: "rgba(2,117,216,1)",
-      pointHitRadius: 50,
-      pointBorderWidth: 2,
-      data: [4, 2, 10, 3, 0, 5, 13, 12, 7, 4, 21, 14, 8],
+      data: [148, 210, 308, 242, 188, 335],
     }],
   },
   options: {
     scales: {
       xAxes: [{
         time: {
-          unit: 'date'
+          unit: 'month'
         },
         gridLines: {
           display: false
         },
         ticks: {
-          maxTicksLimit: 7
+          maxTicksLimit: 6
         }
       }],
       yAxes: [{
         ticks: {
           min: 0,
-          max: 30,
+          max: 500,
           maxTicksLimit: 5
         },
         gridLines: {
-          color: "rgba(0, 0, 0, .125)",
+          display: true
         }
       }],
     },
