@@ -13,19 +13,22 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark fixed-top" style="height: 9vh;">
-        <div class="container-fluid">
-            <div class="d-flex">
+        <div class="container-fluid d-flex pe-0">
+            <div class="d-flex col-auto">
                 <a class="navbar-brand ps-3 pe-4 me-4" href="#">CliniClass CMS</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-controls="collapseWidthExample" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 19px;">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                
             </div>
-            <div class="d-flex">
-                <div class="input-group me-4">
+            <div class="d-flex flex-md-fill pe-4">
+                <div class="flex-grow-0 flex-md-grow-1 order-md-0 order-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-controls="collapseWidthExample" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 19px;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="input-group me-4 d-none d-md-flex order-1" style="width: 300px;">
                     <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for..." aria-describedby="button-addon2">
                     <button class="btn btn-primary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
                 </div>
-                <div class="dropdown d-flex justify-content-center align-items-center me-3">
+                <div class="dropdown d-flex justify-content-center align-items-center order-0 order-md-2">
                     <a class="dropdown-toggle text-decoration-none text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16" style="margin-right: -7px;">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
@@ -42,7 +45,7 @@
     </nav>
     <div class="container-fluid d-flex m-0 p-0">
         <div class="bg-dark text-light align-self-start sticky-top" style="height: 100vh; padding-top: 9vh;">
-            <div class="collapse show collapse-horizontal" id="collapseWidthExample">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
                 <div class="card card-body mx-3 bg-dark border-0" style="width: 190px;">
                     <div class="d-flex align-items-start">
                         <div class="nav flex-column nav-pills w-100" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -66,7 +69,16 @@
                         <li class="breadcrumb-item active" aria-current="page"></li>
                     </ol>
                     <div class="row">
-                        <div class="col-xl-3 col-md-6">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="card bg-body-tertiary text-dark mb-4">
+                                <div class="card-body">04 Thursay</div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a class="small text-dark text-decoration-none" href="#">12:40pm</a>
+                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                             <div class="card bg-primary text-white mb-4">
                                 <div class="card-body"> 3 Visits Today</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
@@ -75,7 +87,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                             <div class="card bg-warning text-white mb-4">
                                 <div class="card-body">1 Currently Admitted</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
@@ -84,16 +96,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-success text-white mb-4">
-                                <div class="card-body">2 Students Recovered</div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-md-6">
+                        <div class="col-sm-12 col-md-6 col-lg-3">
                             <div class="card bg-danger text-white mb-4">
                                 <div class="card-body">0 Emergency</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
@@ -104,7 +107,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-12 col-lg-6">
                             <div class="card mb-4">
                                 <div class="card-header">
                                     <i class="fas fa-chart-area me-1"></i>
@@ -113,7 +116,7 @@
                                 <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-12 col-lg-6">
                             <div class="card mb-4">
                                 <div class="card-header">
                                     <i class="fas fa-chart-bar me-1"></i>
