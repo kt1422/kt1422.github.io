@@ -7,7 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
@@ -19,7 +19,6 @@
         <div class="container-fluid d-flex pe-0">
             <div class="d-flex col-auto">
                 <a class="navbar-brand ps-3 pe-4 me-4" href="#">CliniClass CMS</a>
-                
             </div>
             <div class="d-flex flex-md-fill pe-4">
                 <div class="flex-grow-0 flex-md-grow-1 order-md-0 order-2">
@@ -284,7 +283,7 @@
                         <div class="card bg-secondary text-white mb-4">
                             <div class="card-body">Visit Now</div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Click Here</a>
+                                <a class="small text-white stretched-link" href="#" data-bs-toggle="modal" data-bs-target="#visitModal">Click Here</a>
                                 <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                             </div>
                         </div>
@@ -347,7 +346,10 @@
                             <div class="card-body overflow-auto p-1" id="style-2">
                                 <div class="col-12">
                                     <div class="card text-white bg-primary mb-1">
-                                        <div class="card-header">Visit</div>
+                                        <div class="card-header d-flex align-items-center justify-content-between">
+                                            Visit
+                                            <div class="small text-white"><a class="small text-white stretched-link text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Just now</a></div>
+                                        </div>
                                         <div class="card-body">
                                             <h4 class="card-title">Headache</h4>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -356,7 +358,10 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="card text-white bg-primary mb-1">
-                                        <div class="card-header">Visit</div>
+                                        <div class="card-header d-flex align-items-center justify-content-between">
+                                            Visit
+                                            <div class="small text-white"><a class="small text-white stretched-link text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">1 day ago</a></div>
+                                        </div>
                                         <div class="card-body">
                                             <h4 class="card-title">Headache</h4>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -365,16 +370,22 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="card text-white bg-warning mb-1">
-                                        <div class="card-header">Admit</div>
+                                        <div class="card-header d-flex align-items-center justify-content-between">
+                                            Admitted
+                                            <div class="small text-white"><a class="small text-white stretched-link text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">3 days ago</a></div>
+                                        </div>
                                         <div class="card-body">
-                                            <h4 class="card-title">Sick</h4>
+                                            <h4 class="card-title">Flu</h4>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="card text-white bg-primary mb-1">
-                                        <div class="card-header">Visit</div>
+                                        <div class="card-header d-flex align-items-center justify-content-between">
+                                            Visit
+                                            <div class="small text-white"><a class="small text-white stretched-link text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">1 week ago</a></div>
+                                        </div>
                                         <div class="card-body">
                                             <h4 class="card-title">Runny Nose</h4>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -383,7 +394,10 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="card text-white bg-primary mb-1">
-                                        <div class="card-header">Visit</div>
+                                        <div class="card-header d-flex align-items-center justify-content-between">
+                                            Visit
+                                            <div class="small text-white"><a class="small text-white stretched-link text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">1 month ago</a></div>
+                                        </div>
                                         <div class="card-body">
                                             <h4 class="card-title">Wounds</h4>
                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -452,8 +466,8 @@
                                             </button>
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body row">
-                                                <img src="image/allerta10mg.jpg" alt="" style="width: 300px;" class="col-auto">
+                                            <div class="accordion-body d-flex">
+                                                <img src="image/allerta10mg.jpg" alt="" style="width: 250px;" class="col-auto me-3">
                                                 <p class="col">
                                                     Allerta provides a non-drowsy and fast-acting relief from allergies. It contains Loratadine, an anti-allergy ingredient. Loratadine blocks the substance that causes allergic symptoms (histamine). Loratadine is not likely to make you drowsy or dizzy than the older class of anti-allergy medicines. 
                                                 </p>
@@ -779,13 +793,39 @@
             </div>
             </div>
         </div>
-    </div>
 
+        <div class="modal fade" id="visitModal" tabindex="-1" aria-labelledby="visitModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="visitModalLabel">Fill up</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="js/chart-area-demo.js"></script>
     <script src="js/chart-bar-demo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
     <script src="js/datatables-simple-demo.js"></script>
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 </body>
 </html>
