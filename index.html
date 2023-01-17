@@ -53,8 +53,8 @@
                             <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Dashboard</button>
                             <p class="mt-3 mb-1">INTERFACE</p>
                             <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
-                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
-                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Medicine</button>
+                            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Diagnosis</button>
                         </div>
                     </div>
                 </div>
@@ -65,8 +65,8 @@
                 <h1>Dashboard</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Test</li>
+                        <li class="breadcrumb-item"><a href="#" id="dashboard">Dashboard</a></li>
+                        <!-- <li class="breadcrumb-item active" aria-current="page">Test</li> -->
                     </ol>
                 </nav>
                 <div class="row">
@@ -186,6 +186,13 @@
                 </div>
             </div>
             <div class="tab-pane fade mt-4 px-4" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                <h1>Profile</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Profile</a></li>
+                    </ol>
+                </nav>
                 <div class="row d-flex">
                     <div class="col-12 col-sm-auto mb-3">
                         <div class="card p-0 m-auto" style="width: 18rem;">
@@ -209,18 +216,13 @@
                                     <a class="text-decoration-none text-dark" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <i class="fa-regular fa-pen-to-square float-end me-1 mt-1"></i>
                                     </a>
-                                    <!-- <a class="dropdown-toggle text-decoration-none text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a> -->
                                 </div>
                                 <div class="card-body" style="height: 387px;">
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-6">
                                             <div class="col-12 mb-3">
                                                 <label for="fname" class="form-label ps-1">Name:</label>
                                                 <input type="text" class="form-control" id="fname" value="Maria Victoria">
-                                            </div>
-                                            <div class="col-12 mb-3">
-                                                <label for="course" class="form-label ps-1">Course/Yr:</label>
-                                                <input type="text" class="form-control" id="course" value="BSIT-4A">
                                             </div>
                                             <div class="col-12 mb-3">
                                                 <label for="age" class="form-label ps-1">Age:</label>
@@ -229,42 +231,28 @@
                                             <div class="col-12 mb-3">
                                                 <label for="height" class="form-label ps-1">Height:</label>
                                                 <input type="text" class="form-control" id="height" value="5'6 ft">
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <label for="weight" class="form-label ps-1">Weight:</label>
+                                                <input type="text" class="form-control" id="weight" value="120 kg">
                                             </div>
                                         </div>
-                                        <div class="col-4">
+                                        <div class="col-6">
                                             <div class="col-12 mb-3">
-                                                <label for="fname" class="form-label ps-1">Name:</label>
-                                                <input type="text" class="form-control" id="fname" value="Maria Victoria">
+                                                <label for="sex" class="form-label ps-1">Sex:</label>
+                                                <input type="text" class="form-control" id="sex" value="Female">
                                             </div>
                                             <div class="col-12 mb-3">
-                                                <label for="course" class="form-label ps-1">Course/Yr:</label>
-                                                <input type="text" class="form-control" id="course" value="BSIT-4A">
+                                                <label for="date" class="form-label ps-1">Last visited:</label>
+                                                <input type="text" class="form-control" id="date" value="January 11, 2023">
                                             </div>
                                             <div class="col-12 mb-3">
-                                                <label for="age" class="form-label ps-1">Age:</label>
-                                                <input type="text" class="form-control" id="age" value="19">
+                                                <label for="condition" class="form-label ps-1">Health Condition:</label>
+                                                <input type="text" class="form-control" id="condition" value="Allergic to nuts, Asthma">
                                             </div>
                                             <div class="col-12 mb-3">
-                                                <label for="height" class="form-label ps-1">Height:</label>
-                                                <input type="text" class="form-control" id="height" value="5'6 ft">
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="col-12 mb-3">
-                                                <label for="fname" class="form-label ps-1">Name:</label>
-                                                <input type="text" class="form-control" id="fname" value="Maria Victoria">
-                                            </div>
-                                            <div class="col-12 mb-3">
-                                                <label for="course" class="form-label ps-1">Course/Yr:</label>
-                                                <input type="text" class="form-control" id="course" value="BSIT-4A">
-                                            </div>
-                                            <div class="col-12 mb-3">
-                                                <label for="age" class="form-label ps-1">Age:</label>
-                                                <input type="text" class="form-control" id="age" value="19">
-                                            </div>
-                                            <div class="col-12 mb-3">
-                                                <label for="height" class="form-label ps-1">Height:</label>
-                                                <input type="text" class="form-control" id="height" value="5'6 ft">
+                                                <label for="contact" class="form-label ps-1">Emergency Contact:</label>
+                                                <input type="text" class="form-control" id="contact" value="0997-444-7777">
                                             </div>
                                         </div>
                                     </div>
@@ -278,7 +266,7 @@
                         <div class="card bg-secondary text-white mb-4">
                             <div class="card-body">Visit Now</div>
                             <div class="card-footer d-flex align-items-center justify-content-between">
-                                <a class="small text-white stretched-link" href="#">Click Here</a>
+                                <a class="small text-white stretched-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Click Here</a>
                                 <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                             </div>
                         </div>
@@ -389,8 +377,248 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">Three</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">Four</div>
+            <div class="tab-pane fade mt-4 px-4" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+                <h1>Medicine</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Medicine</a></li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-area me-1"></i>
+                                Most Used Medicine
+                            </div>
+                            <div class="card-body"><canvas id="myBarChart3" width="100%" height="40"></canvas></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-bar me-1"></i>
+                                Medicines Left
+                            </div>
+                            <div class="card-body"><canvas id="myBarChart4" width="100%" height="40"></canvas></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <div class="input-group me-4">
+                            <input type="text" class="form-control" placeholder="Search medicine name" aria-label="Search for..." aria-describedby="button-addon2">
+                            <button class="btn btn-primary" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-4" style="height: 465px;">
+                            <div class="card-header">
+                                <i class="fas fa-chart-area me-1"></i>
+                                Medicine List
+                            </div>
+                            <div class="card-body overflow-auto p-1" id="style-2">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Allerta 10mg
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body row">
+                                                <img src="image/allerta10mg.jpg" alt="" style="width: 300px;" class="col-auto">
+                                                <p class="col">
+                                                    Allerta provides a non-drowsy and fast-acting relief from allergies. It contains Loratadine, an anti-allergy ingredient. Loratadine blocks the substance that causes allergic symptoms (histamine). Loratadine is not likely to make you drowsy or dizzy than the older class of anti-allergy medicines. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Bandage
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Bioflu 600mg
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Biogesic 500mg
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            Carbocisteine 200mg
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                            Diatab 2mg
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingSeven">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                            Erythromycin 250mg
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingEight">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                            Kremil-S
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingNine">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                            Neozep Forte 500mg
+                                            </button>
+                                        </h2>
+                                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTen">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                            Solmux 250mg
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade mt-4 px-4" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+                <h1>Diagnosis List</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" id="dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#" id="dashboard">Diagnosis</a></li>
+                    </ol>
+                </nav>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card mb-4" style="height: 465px;">
+                            <div class="card-header">
+                                <i class="fas fa-chart-area me-1"></i>
+                                Recent Visits
+                            </div>
+                            <div class="card-body overflow-auto p-1" id="style-2">
+                                <div class="col-12">
+                                    <div class="card text-white bg-primary mb-1">
+                                        <div class="card-header">Visit</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">John Paul Baldonado</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card text-white bg-success mb-1">
+                                        <div class="card-header">Recovered</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Mang Juan</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card text-white bg-warning mb-1">
+                                        <div class="card-header">Currenly Admitted</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Maria Victoria</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card text-white bg-primary mb-1">
+                                        <div class="card-header">Visit</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Nick Jonas</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="card text-white bg-danger mb-1">
+                                        <div class="card-header">Emergency</div>
+                                        <div class="card-body">
+                                            <h4 class="card-title">Paul Mark Jr.</h4>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Modal -->
